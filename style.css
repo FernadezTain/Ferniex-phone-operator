@@ -33,13 +33,15 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     overflow: hidden;
     background-image: radial-gradient(circle at 50% 10%, rgba(108, 92, 231, 0.15), transparent 60%);
 }
@@ -52,6 +54,9 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    flex: 1;
+    overflow: hidden;
 }
 
 /* --- АНИМАЦИИ --- */
@@ -449,4 +454,25 @@ button {
     font-weight: 600;
     font-size: 1.05rem;
     text-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* --- ФУТЕР --- */
+.footer {
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.footer p:first-child {
+    font-weight: 600;
+    color: var(--primary);
 }
