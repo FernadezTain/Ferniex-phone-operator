@@ -1,24 +1,24 @@
 // --- ДАННЫЕ ---
 const OPERATORS_DATA = {
     "FernieMobile": [
-        { name: "Premium", price: 115, balance: 5000 },
-        { name: "Medium", price: 70, balance: 1500 },
-        { name: "Minimal", price: 20, balance: 500 }
+        { name: "Premium", price: 5000, balance: 115 },
+        { name: "Medium", price: 1500, balance: 70 },
+        { name: "Minimal", price: 500, balance: 20 }
     ],
     "FernieX": [
-        { name: "PremiumX", price: 1500, balance: 30000 },
-        { name: "PlatinumX", price: 1000, balance: 15000 },
-        { name: "Minimal", price: 600, balance: 10000 }
+        { name: "PremiumX", price: 30000, balance: 1500 },
+        { name: "PlatinumX", price: 15000, balance: 1000 },
+        { name: "Minimal", price: 10000, balance: 600 }
     ],
     "T-2 Mobile": [
-        { name: "Premium", price: 125, balance: 5500 },
-        { name: "Medium", price: 55, balance: 2000 },
-        { name: "Minimal", price: 45, balance: 1000 }
+        { name: "Premium", price: 5500, balance: 125 },
+        { name: "Medium", price: 2000, balance: 55 },
+        { name: "Minimal", price: 1000, balance: 45 }
     ],
     "T-Mobile": [
-        { name: "Premium", price: 150, balance: 4500 },
-        { name: "Medium", price: 50, balance: 1650 },
-        { name: "Minimal", price: 30, balance: 650 }
+        { name: "Premium", price: 4500, balance: 150 },
+        { name: "Medium", price: 1650, balance: 50 },
+        { name: "Minimal", price: 650, balance: 30 }
     ]
 };
 
@@ -168,7 +168,7 @@ function renderOperators() {
             <div class="tariff-item">
                 <div class="tariff-info">
                     <b>${t.name}</b>
-                    <div class="tariff-details">${t.price} ₽ | Бал: ${t.balance}</div>
+                    <div class="tariff-details">${t.price} ₽ | SMS: ${t.balance}</div>
                 </div>
                 <button class="btn-select-tariff" 
                     onclick="selectTariff('${safeOpName}', '${safeTariffName}')">
